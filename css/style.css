@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+	background: white;
+	height: 100px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	flex: 30%;
+	/*border: 1px solid red;*/
+	text-align: center;
+}
+
+.logo h1{
+	font-family: 'Lobster', sans-serif;
+	color: #180F4A;
+}
+
+.menu{
+	flex: 70%;
+	/*border: 1px solid green;*/
+	text-align: right;
+	padding: 20px;
+}
+
+.menu a{
+	text-decoration: none;
+	color: #180F4A;
+	font-size: 20px;
+	padding: 20px 16px;	
+}
+
+.menu a:hover{
+	color: #FF2978;
+	border-top: 4px solid #180F4A;
+}
+
+#botao{
+	border: none;
+	background: #180F4A;
+	color: white;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-right: 10%;
+}
+
+#botao:hover{
+	background: #FF2978;
+}
+
+.header{
+	display: flex;
+	flex-flow: row wrap;
+	background: white;
+	height: 600px;
+	justify-content: center;
+	align-items: center;
+}
+
+.headline{
+	/*border: 1px solid black;*/
+	flex: 40%;
+	margin-left: 10%;
+}
+
+.headline h2{
+	padding:0;
+	margin:0;
+	color: #180F4A;
+}
+
+.headline p{
+	color: gray;
+	text-align: left;
+}
+
+.headline a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background: #FF2978;
+	padding: 20px;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+.headline a:hover{
+	background: #180F4A;
+}
+
+.img-headline{
+	/*border: 1px solid blue;*/
+	flex: 40%;
+	margin-right: 10%;
+}
+
+#titulo-section{
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+	font-weight: 900;
+	color: #180F4A;
+	text-align: center;
+	margin-top: 0;
+}
+
+section{
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	/*border: 1px solid black;*/
+	justify-content: space-between;
+}
+
+section div{
+	/*border: 1px solid green;*/
+	padding-top: 1%;
+	width: 30%;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+section div p{
+	text-align: left;
+	margin: 5%;
+}
+
+.texto-oculto{
+	display: none;
+}
+
+section div:hover .texto-oculto{
+	display: block;
+}
+
+section div:hover .texto-mostrar{
+	display: none;
+}
+
+section div:hover{
+	background: #FF2978;
+	color: white;
+}
+
+footer{
+	margin-top: 80px;
+	height: 200px;
+	background-image: linear-gradient(180deg,#180F4A, #090422, black);
+	border-top: 5px solid #FF2978;
+}
+
+footer h1{
+	font-family: 'Lobster', sans-serif;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+}
